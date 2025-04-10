@@ -1,4 +1,55 @@
-h1 {
+:root {
+  --bg-color: #f4f4f9;
+  --text-color: #222831;
+  --nav-color: #222831;
+}
+
+body.dark {
+  --bg-color: #222831;
+  --text-color: #eee;
+  --nav-color: #37bf;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1,
+h2 {
   font-weight: lighter;
   font-style: italic;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+nav a {
+  color: var(--nav-color);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 16px;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 40px;
 }
